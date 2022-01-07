@@ -11,9 +11,9 @@ const Products = (props) => {
         <span>Kitap Listesi</span>
         <Link to="/cart">Sepetim</Link>
       </h2>
-      {props.bookList.map((book) => {
+      {props.bookList.map((book, index) => {
         return (
-          <div className="book">
+          <div key={index} className="book">
             <img src={book.image} alt={book.name} />
             <div>
               <h4>{book.name}</h4>

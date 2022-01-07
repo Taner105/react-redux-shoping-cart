@@ -14,9 +14,9 @@ const Cart = (props) => {
 
       <h3>Toplam Sepet Tutarı: &#8378;{totalPrice.toFixed(2)}</h3>
 
-      {props.cart.map((book) => {
+      {props.cart.map((book, index) => {
         return (
-          <div className="book">
+          <div key={index} className="book">
             <img
               src={book.image}
               alt={book.name}

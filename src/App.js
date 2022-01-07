@@ -18,7 +18,7 @@ const App = () => {
           src="https://avatars3.githubusercontent.com/u/60869810?v=4"
           alt="React Dersleri"
         />{" "}
-        React Dersleri
+        React 
       </h1>
       <Routes>
          <Route path="/" element={<Products/>} />
